@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			xmlns:ontoV="http://torio.unileon.es/~dieigr/Ontology#">
+
+<!--************************* VEHICULOS ****************************-->
+<!-- Los datos de fernando están en otro documento -->
+	<rdf:Description rdf:about="http://una.url/fordFocus-6778-BBH">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Coche"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/pedro"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url/iveco-5669-ABC">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Camion"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/luis"/>
+	</rdf:Description>
+
+<!--************************* PERSONAS ****************************-->
+	<rdf:Description rdf:about="http://una.url.com/pedro">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Conductor"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Lyon"/>
+		<ontoV:nombre>Pedro</ontoV:nombre>
+		<ontoV:apellido>Duque</ontoV:apellido>
+	</rdf:Description>
+
+<!--************************* CIUDADES ****************************-->
+	<ontoV:Ciudad rdf:about="http://una.url.com/Berlin">
+		<ontoV:perteneceAPais rdf:resource="http://una.url.com/Alemania"/>
+	</ontoV:Ciudad>
+
+<!--************************* PAISES ****************************-->
+
+</rdf:RDF>

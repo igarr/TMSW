@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			xmlns:ontoV="http://torio.unileon.es/~dieigr/Ontology#">
+
+<!--************************* VEHICULOS ****************************-->
+	<rdf:Description rdf:about="http://una.url/renaultMegane-2334-CBC">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Coche"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/fernando"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url/pegaso-4564-ABC">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Camion"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/luis"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url/man-2222-NBC">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Camion"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/juan"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url/renault18-M-3333-V">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Coche"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/luis"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url/trailerMercedes">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Camion"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/maria"/>
+	</rdf:Description>
+
+<!--************************* PERSONAS ****************************-->
+	<rdf:Description rdf:about="http://una.url.com/fernando">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Conductor"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Paris"/>
+		<ontoV:nombre>Fernando</ontoV:nombre>
+		<ontoV:apellido>Gomez</ontoV:apellido>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url.com/luis">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Conductor"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Londres"/>
+		<ontoV:nombre>Luis</ontoV:nombre>
+		<ontoV:apellido>Sanz</ontoV:apellido>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url.com/juan">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Conductor"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Manchester"/>
+		<ontoV:nombre>Juan</ontoV:nombre>
+		<ontoV:apellido>Aguirrezabalaga</ontoV:apellido>
+</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url.com/maria">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Persona"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Paris"/>
+		<ontoV:nombre>María</ontoV:nombre>
+		<ontoV:apellido>Buiza</ontoV:apellido>
+</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url.com/julian">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Persona"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Manchester"/>
+		<ontoV:nombre>Julian</ontoV:nombre>
+		<ontoV:apellido>Gomez</ontoV:apellido>
+</rdf:Description>
+
+<!--************************* CIUDADES ****************************-->
+	<ontoV:Ciudad rdf:about="http://una.url.com/Paris">
+		<ontoV:perteneceAPais rdf:resource="http://una.url.com/Francia"/>
+	</ontoV:Ciudad>
+
+	<ontoV:Ciudad rdf:about="http://una.url.com/Londres">
+		<ontoV:perteneceAPais rdf:resource="http://una.url.com/UK"/>
+	</ontoV:Ciudad>
+
+	<ontoV:Ciudad rdf:about="http://una.url.com/Manchester">
+		<ontoV:perteneceAPais rdf:resource="http://una.url.com/UK"/>
+	</ontoV:Ciudad>
+
+<!--************************* PAISES ****************************-->
+	<ontoV:Pais rdf:about="http://una.url.com/Francia">
+		<ontoV:habitantes>43000000</ontoV:habitantes>
+	</ontoV:Pais>
+
+	<ontoV:Pais rdf:about="http://una.url.com/UK">
+		<ontoV:habitantes>54000000</ontoV:habitantes>
+	</ontoV:Pais>
+
+</rdf:RDF>

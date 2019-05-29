@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+			xmlns:ontoV="http://torio.unileon.es/~dieigr/Ontology#">
+
+<!--************************* VEHICULOS ****************************-->
+<!-- Los datos de fernando están en otro documento -->
+	<rdf:Description rdf:about="http://una.url/renaultLaguna-3344-FGH">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Coche"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/fernando"/>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://una.url/mercedesClaseE-4477-FFF">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Coche"/>
+		<ontoV:esConducidoPor rdf:resource="http://una.url.com/belen"/>
+	</rdf:Description>
+
+<!--************************* PERSONAS ****************************-->
+	<rdf:Description rdf:about="http://una.url.com/belen">
+		<rdf:type rdf:resource="http://torio.unileon.es/~dieigr/Ontology#Conductor"/>
+		<ontoV:viveEn rdf:resource="http://una.url.com/Berlin"/>
+		<ontoV:nombre>Belén</ontoV:nombre>
+		<ontoV:apellido>Lago</ontoV:apellido>
+	</rdf:Description>
+
+<!--************************* CIUDADES ****************************-->
+	<ontoV:Ciudad rdf:about="http://una.url.com/Lyon">
+		<ontoV:perteneceAPais rdf:resource="http://una.url.com/Francia"/>
+	</ontoV:Ciudad>
+
+
+<!--************************* PAISES ****************************-->
+	<ontoV:Pais rdf:about="http://una.url.com/Alemania">
+		<ontoV:habitantes>57000000</ontoV:habitantes>
+	</ontoV:Pais>
+
+
+</rdf:RDF>
